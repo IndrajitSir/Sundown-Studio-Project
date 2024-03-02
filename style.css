@@ -83,3 +83,71 @@ nav{
     text-align: right;
     line-height: 8vw;
 }
+#page1 video{
+    position: relative;
+    width: 100%;
+    border-radius: 30px;
+    margin: 4vw 0vw;
+}
+#hero-shape{
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    background-color: #FE320A;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    right: 0vw;
+    top: 70vh;
+    filter: blur(20px);
+}
+#hero-1{
+    height: 100%;
+    width: 100%;
+    background-color: #FE320A;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+}
+#hero-2{
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(#FE320A,#fe570a);
+    border-radius: 50%;
+    filter: blur(10px);
+    position: absolute;
+    animation-name: animation2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#hero-3{
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(#FE320A,#fe570a);
+    border-radius: 50%;
+    filter: blur(30px);
+    position: absolute;
+    animation-name: animation1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes animation1 {
+    from{
+        transform: translate(-25%,-2%);
+    }
+    to{
+        transform: translate(0%,10%);
+    }
+}
+@keyframes animation2 {
+    from{
+        transform: translate(-5%,-2%);
+    }
+    to{
+        transform: translate(-30%,10%);
+    }
+}
