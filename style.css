@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #edcda0;
+    position: relative;
+    padding: 0 2vw;
+}
+nav{
+    padding: 2vw 0vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+#nav-part2 h3{
+    padding: 5px 9px;
+    border: 1px solid rgb(122, 120, 120);
+    border-radius: 40%;
+    font-weight: 500;
+    color: rgba(29, 25, 25, 0.086);
+    font-size: 20px;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+}
+#nav-part2 h3::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 40%;
+    transition: all ease 0.4s;
+}
+#nav-part2 h3:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+#nav-part2 h3 a{
+    color: rgb(29, 27, 27);
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+#nav-part2 h3:hover a{
+    color: rgb(247, 242, 233);
+}
+/* Yahan tak ka code sirf navbar ke liye hai. */
+#center{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000003c;
+    padding-bottom: 2.5vw;
+}
+#left h3{
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+}
+#center h1{
+    font-size: 10vw;
+    text-align: right;
+    line-height: 8vw;
+}
